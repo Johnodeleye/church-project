@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+   background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+	z-index: 1000;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #0e8ff1;
+	color: white;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.682);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-open {
+	width: 250px;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+	color: blue;
+}
+@media (max-width: 800px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
+header img {
+    margin-top: 7%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.quick-links {
+    display: flex; /* Display buttons flexibly */
+    flex-wrap: wrap; /* Wrap buttons to next line */
+    justify-content: center; /* Center buttons */
+  }
+  
+  .quick-link-button {
+    cursor: pointer;
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add slight rounding */
+    margin: 20px; /* Add space between buttons */
+    width: calc(33.33% - 40px); /* Make buttons equally wide */
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quick-link-button img {
+    width: 50px; /* Set image width */
+    height: 50px; /* Set image height */
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+  
+  .quick-link-button h3 {
+    font-weight: bold; /* Make header bold */
+    margin-bottom: 10px; /* Add space between header and text */
+  }
+  
+  .quick-link-button p {
+    font-size: 16px; /* Set text font size */
+    margin-bottom: 20px; /* Add space between text and link */
+  }
+  
+  .quick-link-button a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .quick-link-button:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+  }
+  
+  .quick-link-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+  }
+
+
+  /* Add media queries for mobile responsiveness */
+
+@media (max-width: 768px) {
+    .quick-links {
+      flex-direction: column; /* Stack buttons vertically */
+      margin-right: 10%;
+    }
+    .quick-link-button {
+      width: 100%; /* Make buttons full width */
+      margin-bottom: 20px; /* Add space between buttons */
+    }
+    .quick-link-button img {
+      width: 30px; /* Reduce image size */
+      height: 30px; /* Reduce image size */
+    }
+    .quick-link-button h3 {
+      font-size: 18px; /* Reduce header font size */
+    }
+    .quick-link-button p {
+      font-size: 14px; /* Reduce text font size */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #0e8ff1;
+	color: #fff;
+	margin-top: 20px;
+	padding: 20px 0;
+  }
+  
+  .footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .footer-left {
+	width: 50%;
+  }
+  
+  .footer-right {
+	width: 50%;
+	text-align: right;
+  }
+  
+  .footer-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .footer-right li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  .footer-right li a {
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .footer-right li a:hover {
+	color: #ea3535;
+  }

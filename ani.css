@@ -1,0 +1,30 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* Blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader img {
+    width: 50px; /* Logo size */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff; /* White circle */
+    padding: 10px;
+    box-sizing: border-box;
+    animation: roll 3s linear infinite;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
